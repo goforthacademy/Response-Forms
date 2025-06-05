@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8-Week Leadership Program Feedback Survey</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .radio-group, .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+  <div class="bg-white p-8 rounded-lg shadow-lg max-w-4xl w-full">
+    <!-- Logo -->
+    <div class="flex justify-center mb-2">
+      <img src="https://raw.githubusercontent.com/goforthacademy/Am-I-A-Leader-A-Self-Guided-Growth-Experience-/6d7af00e3e43601c6459fd32a84c1f569387e045/forms/GFLALogo.png" alt="Go-Forth Leadership Academy Logo" class="w-full object-contain max-h-80">
+    </div>
+    
+    <!-- Header -->
+    <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">8-Week Leadership Program Feedback Survey</h1>
+    <p class="text-center text-gray-600 mb-6">Thank you for participating in the Go-Forth Leadership Program. Your feedback helps us improve and shape future leadership opportunities. This survey is anonymous unless you choose to include your name.</p>
+    
+    <!-- Form -->
+    <form action="https://formspree.io/f/xnnvnkjj" method="POST" class="space-y-8">
+      <!-- Hidden Fields for Formspree -->
+      <input type="hidden" name="_subject" value="Leadership Program Feedback Submission">
+      <input type="text" name="_gotcha" style="display:none">
+      
+      <!-- Section 0: Privacy -->
+      <div class="border-t pt-4">
+        <h2 class="text-xl font-semibold text-[#800020] mb-4">🔒 Privacy</h2>
+        <label class="block text-gray-700 mb-2">1. Would you like this feedback to remain anonymous?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="anonymous" value="Yes" required class="mr-2"> Yes</label>
+          <label><input type="radio" name="anonymous" value="No" class="mr-2"> No (You may optionally share your name at the end)</label>
+        </div>
+      </div>
+
+      <!-- Section 1: Overall Experience -->
+      <div class="border-t pt-4">
+        <h2 class="text-xl font-semibold text-[#800020] mb-4">🌟 Overall Experience</h2>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">2. How would you rate your overall experience with the 8-week leadership program?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="overall_experience" value="1" required class="mr-2"> 1 🌟 (Poor)</label>
+            <label><input type="radio" name="overall_experience" value="2" class="mr-2"> 2 🌟</label>
+            <label><input type="radio" name="overall_experience" value="3" class="mr-2"> 3 🌟</label>
+            <label><input type="radio" name="overall_experience" value="4" class="mr-2"> 4 🌟</label>
+            <label><input type="radio" name="overall_experience" value="5" class="mr-2"> 5 🌟 (Excellent)</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">3. Did the self-guided format work well for your learning style?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="self_guided_format" value="Yes" required class="mr-2"> Yes</label>
+            <label><input type="radio" name="self_guided_format" value="Somewhat" class="mr-2"> Somewhat</label>
+            <label><input type="radio" name="self_guided_format" value="No" class="mr-2"> No</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">4. How clear and easy to follow were the weekly modules?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="module_clarity" value="Very clear" required class="mr-2"> Very clear</label>
+            <label><input type="radio" name="module_clarity" value="Mostly clear" class="mr-2"> Mostly clear</label>
+            <label><input type="radio" name="module_clarity" value="Somewhat confusing" class="mr-2"> Somewhat confusing</label>
+            <label><input type="radio" name="module_clarity" value="Very confusing" class="mr-2"> Very confusing</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Growth & Impact -->
+      <div class="border-t pt-4">
+        <h2 class="text-xl font-semibold text-[#800020] mb-4">💪 Growth & Impact</h2>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">5. What personal or professional growth did you notice during the program?</label>
+          <textarea name="personal_growth" rows="4" class="w-full p-2 border rounded-md" placeholder="Enter your response"></textarea>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">6. Which week or topic was the most valuable to you, and why?</label>
+          <textarea name="valuable_topic" rows="4" class="w-full p-2 border rounded-md" placeholder="Enter your response"></textarea>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">7. Did the course help you better understand your leadership strengths and opportunities for growth?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="leadership_strengths" value="Yes, definitely" required class="mr-2"> Yes, definitely</label>
+            <label><input type="radio" name="leadership_strengths" value="Yes, somewhat" class="mr-2"> Yes, somewhat</label>
+            <label><input type="radio" name="leadership_strengths" value="Not really" class="mr-2"> Not really</label>
+            <label><input type="radio" name="leadership_strengths" value="Not at all" class="mr-2"> Not at all</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Application -->
+      <div class="border-t pt-4">
+        <h2 class="text-xl font-semibold text-[#800020] mb-4">🛠 Application</h2>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">8. Were the action steps and reflections practical and relevant to your role?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="action_steps" value="Always" required class="mr-2"> Always</label>
+            <label><input type="radio" name="action_steps" value="Most of the time" class="mr-2"> Most of the time</label>
+            <label><input type="radio" name="action_steps" value="Occasionally" class="mr-2"> Occasionally</label>
+            <label><input type="radio" name="action_steps" value="Rarely" class="mr-2"> Rarely</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">9. Did you have opportunities to apply what you learned in your current role?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="apply_learning" value="Yes, often" required class="mr-2"> Yes, often</label>
+            <label><input type="radio" name="apply_learning" value="Occasionally" class="mr-2"> Occasionally</label>
+            <label><input type="radio" name="apply_learning" value="Not yet" class="mr-2"> Not yet</label>
+            <label><input type="radio" name="apply_learning" value="Not applicable" class="mr-2"> Not applicable</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Future Participation & Community -->
+      <div class="border-t pt-4">
+        <h2 class="text-xl font-semibold text-[#800020] mb-4">👥 Future Participation & Community</h2>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">10. Would you be interested in joining a peer group to continue developing your leadership skills?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="peer_group" value="Yes" required class="mr-2"> Yes</label>
+            <label><input type="radio" name="peer_group" value="Maybe" class="mr-2"> Maybe</label>
+            <label><input type="radio" name="peer_group" value="No" class="mr-2"> No</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">11. Would you recommend this program to others at Go-Forth?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="recommend" value="Yes" required class="mr-2"> Yes</label>
+            <label><input type="radio" name="recommend" value="Maybe" class="mr-2"> Maybe</label>
+            <label><input type="radio" name="recommend" value="No" class="mr-2"> No</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">12. Would you like to opt into the next leadership opportunity (mentorship, advanced track, etc.)?</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="opt_in" value="Yes" class="mr-2"> Yes, I’d like to opt in. Please follow up with me.</label>
+            <p class="text-sm text-gray-500 mt-1">*If anonymous, we won’t be able to follow up unless you provide your name or email below*</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5: Final Thoughts -->
+      <div class="border-t pt-4">
+        <h2 class="text-xl font-semibold text-[#800020] mb-4">💬 Final Thoughts</h2>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">13. What improvements or additions would you suggest for future versions of this program?</label>
+          <textarea name="improvements" rows="6" class="w-full p-2 border rounded-md" placeholder="Enter your response"></textarea>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2">14. (Optional) If you’d like us to follow up or include your feedback in planning future leadership opportunities, please share your name and email:</label>
+          <input type="text" name="name" class="w-full p-2 border rounded-md mb-2" placeholder="Name">
+          <input type="email" name="email" class="w-full p-2 border rounded-md" placeholder="Email">
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">Submit Feedback</button>
+      </div>
+    </form>
+
+    <!-- Footer -->
+    <p class="text-center text-gray-600 mt-6">Thank you for your time and valuable feedback!</p>
+  </div>
+</body>
+</html>
